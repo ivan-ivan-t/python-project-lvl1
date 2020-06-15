@@ -5,7 +5,7 @@ packages = [
 
 
 name = "ivan-ivan-t_brain_games"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Ivan Terehov <ivterehov@gmail.com>"]
 
