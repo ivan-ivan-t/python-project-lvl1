@@ -1,14 +1,13 @@
 language: python
-python:
-  - 3.6
-  - 3.7
+python: 
   - 3.8
-
+  
 before_install:
+  # make depends on poetry
   - pip install poetry
 
 install:
   - make install
 
 script:
-  - make check
+  - make lint
