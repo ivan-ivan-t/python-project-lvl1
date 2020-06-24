@@ -6,15 +6,18 @@ import prompt
 def rules():
     print('Answer "yes" if number even otherwise answer "no"\n')
 
+
 def is_even(number):
     if number % 2 == 0:
         return 'yes'
     else:
         return 'no'
 
+
 def answer(number):
     print('Question: {}'.format(number))
     return prompt.string('Your answer: ')
+
 
 def logic_games(name):
     count = 3
