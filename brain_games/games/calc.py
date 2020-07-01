@@ -1,7 +1,5 @@
 import random
 
-from operator import mul, add, sub
-
 import prompt
 
 
@@ -11,11 +9,11 @@ def rules():
 
 def is_right(num1, operand, num2):
     if operand == '+':
-        return add(num1, num2)
+        return num1 + num2
     elif operand == '-':
-        return sub(num1, num2)
+        return num1 - num2
     elif operand == '*':
-        return mul(num1, num2)
+        return num1 * num2
 
 
 def answer(num1, operand, num2):
