@@ -43,7 +43,3 @@ Let's try again, {c}!
         count -= 1
     if count == 0:
         print('Congratulations, {}!'.format(name))
-
-
-
-
