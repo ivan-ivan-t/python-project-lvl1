@@ -30,7 +30,7 @@ def logic_game(name):
         operand = random.choice(['+', '-', '*'])
         user_answer = answer(num1, operand, num2)
         correct_answer = is_right(num1, operand, num2)
-        if correct_answer != int(user_answer):
+        if str(correct_answer) != user_answer:
             print(
                 """
 '{a}' is wrong answer ;(. Correct answer was '{b}'.

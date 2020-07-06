@@ -29,7 +29,7 @@ def logic_game(name):
         num2 = random.randint(1, 50)
         user_answer = answer(num1, num2)
         correct_answer = is_right(num1, num2)
-        if correct_answer != int(user_answer):
+        if str(correct_answer) != user_answer:
             print(
               """
 '{a}' is wrong answer ;(. Correct answer was '{b}'.
