@@ -6,8 +6,9 @@ packages = [
 
 name = "ivan-ivan-t_brain_games"
 version = "0.7.0"
-description = ""
+description = "Five brain-games "
 authors = ["Ivan Terehov <ivterehov@gmail.com>"]
+repository = "https://test.pypi.org/simple/ ivan-ivan-t-brain-games"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -23,6 +24,7 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
