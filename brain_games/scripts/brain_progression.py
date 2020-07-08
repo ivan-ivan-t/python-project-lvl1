@@ -1,13 +1,10 @@
-from brain_games import cli
+from brain_games import engine
 
 from brain_games.games import progression
 
 
 def main():
-    cli.greeting()
-    progression.rules()
-    name = cli.welcome_user()
-    progression.logic_game(name)
+    engine.logic_game(progression)
 
 
 if __name__ == '__main__':

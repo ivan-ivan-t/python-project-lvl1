@@ -1,11 +1,10 @@
-from brain_games import cli, even
+from brain_games import engine
+
+from brain_games.games import even
 
 
 def main():
-    cli.greeting()
-    even.rules()
-    name = cli.welcome_user()
-    even.logic_games(name)
+    engine.logic_game(even)
 
 
 if __name__ == '__main__':
