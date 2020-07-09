@@ -1,7 +1,5 @@
 import random
 
-import prompt
-
 
 RULES = 'Find the greatest common divisor of given numbers.\n'
 
@@ -18,7 +16,6 @@ def right_result(num1, num2):
 def question_and_correct_answer():
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)
-    question = print('Question: {a} {b}'
-          .format(a=num1, b=num2))
+    question = '{a} {b}'.format(a=num1, b=num2)
     correct_answer = str(right_result(num1, num2))
     return (correct_answer, question)
