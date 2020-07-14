@@ -1,27 +1,20 @@
 import random
 
 
-RULES = 'What number is missing in the progression?\n'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
-def make_progression(start, step, lenght):
-    counter = 0
-    result = []
-    next_number = start
-    while counter < lenght:
-        result.append(str(next_number))
-        next_number += step
-        counter += 1
-    return result
-
-
-def question_and_correct_answer():
+def prepare_question_and_calculated():
     start = random.randint(1, 10)
     step = random.randint(1, 10)
     size = 10
-    progression = make_progression(start, step, size)
+    counter = 0
+    progression = []
+    while counter < size:
+        progression.append(str(start + counter * step))
+        counter += 1
     index = random.randint(0, len(progression) - 1)
-    correct_answer = progression[index]
+    correct_answer = start + index * step
     progression[index] = '..'
     question = ' '.join(progression)
     return (correct_answer, question)

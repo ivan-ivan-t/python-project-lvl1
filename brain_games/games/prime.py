@@ -1,7 +1,7 @@
 import random
 
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no"\n'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
 
 def is_prime(number):
@@ -12,7 +12,7 @@ def is_prime(number):
         return 'yes'
 
 
-def question_and_correct_answer():
+def prepare_question_and_calculated():
     number = random.randint(2, 100)
     question = str(number)
     correct_answer = is_prime(number)

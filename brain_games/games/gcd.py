@@ -1,7 +1,7 @@
 import random
 
 
-RULES = 'Find the greatest common divisor of given numbers.\n'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def right_result(num1, num2):
@@ -13,7 +13,7 @@ def right_result(num1, num2):
     return num1
 
 
-def question_and_correct_answer():
+def prepare_question_and_calculated():
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)
     question = '{a} {b}'.format(a=num1, b=num2)
