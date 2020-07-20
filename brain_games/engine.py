@@ -14,7 +14,7 @@ def play(game):
         if correct_answer != user_answer:
             print(
                 """'{a}' is wrong answer ;(. Correct answer was '{b}'."""
-                .format(a=user_answer, b= correct_answer))
+                .format(a=user_answer, b=correct_answer))
             print("""Lets's try agane, {}!""".format(name))
             return
         print('Correct!')
