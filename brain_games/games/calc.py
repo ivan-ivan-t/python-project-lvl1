@@ -13,7 +13,7 @@ def right_result(num1, operators, num2):
         return num1 * num2
 
 
-def prepare_question_and_calculated():
+def prepare_question_and_answer():
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
     operators = random.choice(['+', '-', '*'])

@@ -4,7 +4,7 @@ import random
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def prepare_question_and_calculated():
+def prepare_question_and_answer():
     start = random.randint(1, 10)
     step = random.randint(1, 10)
     size = 10
@@ -14,7 +14,7 @@ def prepare_question_and_calculated():
         progression.append(str(start + counter * step))
         counter += 1
     index = random.randint(0, len(progression) - 1)
-    correct_answer = start + index * step
+    correct_answer = str(start + index * step)
     progression[index] = '..'
     question = ' '.join(progression)
     return (correct_answer, question)
