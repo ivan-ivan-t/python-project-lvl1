@@ -13,7 +13,7 @@ def prepare_question_and_answer():
     while counter < size:
         progression.append(str(start + counter * step))
         counter += 1
-    index = random.randint(0, len(progression) - 1)
+    index = random.randint(0, size)
     correct_answer = str(start + index * step)
     progression[index] = '..'
     question = ' '.join(progression)
